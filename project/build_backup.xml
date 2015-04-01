@@ -1,0 +1,23 @@
+
+	<!-- Variable -->
+	<property name="build.dir" location="bin" />
+	<property name="dist.dir" location="dist" />
+	<property name="docs.dir" location="docs" />
+	<property name="src.dir" location="src" />
+
+	<target name="clean">
+		<delete dir="${build.dir}" />
+		<delete dir="${dist.dir}" />
+		<delete dir="${docs.dir}" />		
+		<delete dir="target/classes" />
+		<delete dir="target/test-classes" />
+	</target>
+
+	<!-- Creates the deployable jar file -->
+	<target name="jar" depends="build-project">
+		<jar destfile="${dist.dir}/project.jar" basedir="${build.dir}">
+			<manifest>
+				<attribute name="Main-Class" value="com.mph.systems.Initializer.main" />
+			</manifest>
+		</jar>
+	</target>
