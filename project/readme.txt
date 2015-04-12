@@ -11,3 +11,6 @@ git hub location: https://github.com/12006766g/project
 and
  Runtimes -> jdk 1.8.0_31
 jdk: jdk 1.8.0_31
+4. please use maven build to get all the packages to your repository by: 
+right-click project -> Run as -> maven build -> enter the goal as "package"
+5. you can run ant build or maven build as you like once maven get all the dependencies
