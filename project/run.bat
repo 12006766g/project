@@ -1,0 +1,1 @@
+java -cp ./target/project-1.0.0-jar-with-dependencies.jar com.mph.systems.impls.InitializerImpl

@@ -14,3 +14,4 @@ jdk: jdk 1.8.0_31
 4. please use maven build to get all the packages to your repository by: 
 right-click project -> Run as -> maven build -> enter the goal as "package"
 5. you can run ant build or maven build as you like once maven get all the dependencies
+6. the main program of this project is com.mph.systems.impls.InitializerImpl
